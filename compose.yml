@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - "8052:80"
+    volumes:
+    - ./app:/usr/share/nginx/html
